@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+}
+
+.main-hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url("./images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.hero-img {
+    position: absolute;
+   top: 6%;
+    transform: translateY(-50%);
+    left: 10%;
+    z-index: 10;
+}
+
+.hero-img img {
+    display: block;
+    width: 150px;
+    height: auto;
+}
+.language-control {
+    position: absolute;
+    top: 30px;
+    right: 200px;
+    z-index: 10;
+}
+.language-select {
+    background-color:rgba(255, 255, 255, 0.095);
+    border: white 1px solid;
+    color: white;
+    padding: 6px 10px 6px 34px;
+    width: 120px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.language-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    width: 20px;
+    height: 20px;
+}
+.sign-in-btn {
+    position: absolute;
+    top: 30px;
+    right: 120px;
+    z-index: 10;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+   font-size: 14px;
+   font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hero-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 10;
+    width: min(90%, 900px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+.tagline {
+    margin: 0;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 900;
+}
+.tagline-1 {
+    margin: 0;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.tagline-2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
