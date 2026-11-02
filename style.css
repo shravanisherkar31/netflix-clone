@@ -232,3 +232,51 @@ body {
         height: 205px;
     }
 }
+
+.more-reasons-section {
+    padding: 24px 8%;
+}
+
+.more-reasons-section > h1 {
+    margin-top: 0;
+}
+
+.reasons-container {
+    display: flex;
+    gap: 16px;
+    color: white;
+}
+
+.reasons-container > div {
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 180px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #1e1b3a;
+}
+
+.reasons-container h1 {
+    margin-top: 0;
+}
+
+@media (max-width: 900px) {
+    .reasons-container {
+        flex-wrap: wrap;
+    }
+
+    .reasons-container > div {
+        flex-basis: calc(50% - 48px);
+    }
+}
+
+@media (max-width: 600px) {
+    .more-reasons-section {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .reasons-container > div {
+        flex-basis: 100%;
+    }
+}
